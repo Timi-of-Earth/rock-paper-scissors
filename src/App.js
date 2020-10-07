@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Board} from './Components/Board/Board'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const data = {
+  basic: ['rock', 'paper', 'scissors'],
+  advanced: ['rock', 'paper', 'scissors', 'lizard', 'spock']
+}
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      gameMode: 'basic',
+      userChoice: '',
+      houseChoice: ''
+    }
+  }
+  render() {
+    return (
+      <Board gameMode={this.state.gameMode}/>
+    );
+  };
 }
 
 export default App;

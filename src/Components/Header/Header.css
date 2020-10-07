@@ -1,0 +1,50 @@
+.header {
+    border-style: solid;
+    border-color: hsl(217, 16%, 45%);
+    width: 50vw;
+    height: 95px;
+    border-width: 2px;
+    border-radius: 1rem;
+    position: relative;
+    top: 2.5rem;
+    margin: auto;
+}
+
+.title {
+    float: left;
+}
+.title ul{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    padding-left: 15px;
+    color: white;
+    font-size: 21px;
+    font-weight: 400;
+}
+.score {
+    right: 14px;
+    color: hsl(229, 64%, 46%);
+    background-color: white;
+    height: 72px;
+    width: 85px;
+    border-radius: 5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+.score h1{
+    color: hsl(229, 25%, 31%);
+    margin-top: 0px;
+}
+.score p{
+    margin-bottom: 0;
+    font-size: 10px;
+    font-weight: 600;
+}
