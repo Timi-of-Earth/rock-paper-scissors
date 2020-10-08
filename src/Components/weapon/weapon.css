@@ -4,23 +4,20 @@
     border-radius: 25px;
 }
 .rock {
-    width: 140px;
-    height: 140px;
-    border-radius: 70px;
+    
+    
     background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
     margin-right: 50px;
 }
 .paper {
-    width: 140px;
-    height: 140px;
-    border-radius: 70px;
+    
+    
     background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
     margin-left: 50px;
 }
 .scissors {
-    width: 140px;
-    height: 140px;
-    border-radius: 70px;
+    
+    
     background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
 }
 .plate {
@@ -31,13 +28,11 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgb(233, 230, 230);
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    
+    text-align: left;
 }
 img{
-    width: 65px;
-    height: auto;
+    
     margin: 0;
     position: relative;
     top: 50%;
@@ -45,4 +40,34 @@ img{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgb(233, 230, 230);
+}
+
+.small {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+
+.big {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+}
+.small-plate {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.big-plate {
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+}
+.small-img {
+    width: 65px;
+    height: auto;
+}
+.big-img {
+    width: 85px;
+    height: auto;
 }
