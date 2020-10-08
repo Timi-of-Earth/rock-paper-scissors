@@ -1,0 +1,36 @@
+.rules-image {
+    height: 40vh;
+    width: auto;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.rules {
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 25vh;
+    color: hsl(229, 25%, 31%);
+    padding: 15px;
+    border-radius: 10px;
+}
+.rules h1{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.rules-div {
+    display: flex;
+    justify-content: center;
+}
+.close {
+    background-color: white;
+    width: 20px;
+    top: 14px;
+    float: right;
+    left: 10px;
+}

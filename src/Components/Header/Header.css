@@ -12,6 +12,7 @@
 
 .title {
     float: left;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 .title ul{
     margin: 0;

@@ -6,6 +6,7 @@ button {
     height: 35px;
     border-radius: 5px;
     right: 0px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .button {
@@ -13,4 +14,5 @@ button {
     bottom: 35px;
     right: 35px;
     font-size: 25px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
