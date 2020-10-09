@@ -7,11 +7,11 @@ export class Basic extends React.Component {
         return (
             <div className='basic'>
                 <div className='upper'>
-                    <Weapon class='rock' size='small'/>
-                    <Weapon class='paper' size='small'/>
+                    <Weapon class='rock' size='small' onClick={this.props.onClick}/>
+                    <Weapon class='paper' size='small' onClick={this.props.onClick}/>
                 </div>
                 <div className='lower'>
-                    <Weapon class='scissors' size='small'/>
+                    <Weapon class='scissors' size='small' onClick={this.props.onClick}/>
                 </div>
             </div>
         )

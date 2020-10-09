@@ -29,3 +29,23 @@
     border-radius: 60px;
     background-color: hsl(237, 40%, 18%);
 }
+.texts {
+    text-align: center;
+    padding-top: 30px;
+}
+.again-button {
+    background-color: white;
+    height: 35px;
+    color: hsl(349, 71%, 52%);
+    text-align: center;
+    width: 150px;
+    border-radius: 10px;
+}
+.again-button p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: absolute;
+    margin-left: 27px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}

@@ -38,6 +38,7 @@ export class Board2 extends React.Component {
                         </div>
                         <div className='house-weapon'>
                             <p>THE HOUSE PICKED</p>
+                            <div className='placeholder'></div>
                         </div>
                     </div>
                     <Rules gameMode={this.props.gameMode} display={this.state.rulesDisplay} onClick={this.closeAction}/>
