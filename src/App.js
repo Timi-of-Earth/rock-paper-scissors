@@ -63,7 +63,7 @@ class App extends React.Component {
 
     //determine winner and set verb state
     let verb;
-    if (data.userChoice === houseChoice) {
+    if (data[userChoice] === houseChoice) {
       verb = 'WIN'
     } else if (userChoice === houseChoice) {
       verb = 'DRAW'

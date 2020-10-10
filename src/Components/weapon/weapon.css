@@ -4,20 +4,14 @@
     border-radius: 25px;
 }
 .rock-div {
-    
-    
     background-image: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
     
 }
 .paper-div {
-    
-    
     background-image: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
     
 }
 .scissors-div {
-    
-    
     background-image: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
 }
 .plate {
@@ -76,4 +70,32 @@ img{
 .big-img {
     width: 85px;
     height: auto;
+}
+
+@media only screen and (max-width: 420px) {
+    .small {
+        width: 130px;
+        height: 130px;
+        border-radius: 65px;
+    }
+    .small.paper-div {
+        margin-left: 40px;
+    }
+    .small.rock-div {
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .small {
+        width: 120px;
+        height: 120px;
+        border-radius: 60px;
+    }
+    .small.paper-div {
+        margin-left: 35px;
+    }
+    .small.rock-div {
+        margin-right: 35px;
+    }
 }

@@ -49,3 +49,9 @@
     font-size: 10px;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 420px) {
+    .header{
+        width: 82vw;
+    }
+}
