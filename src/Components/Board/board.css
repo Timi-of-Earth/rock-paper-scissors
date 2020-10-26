@@ -3,6 +3,6 @@
     min-height: 100vh;
     height: auto;
     width: 100%;
-    overflow: auto;
+    overflow: scroll;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }

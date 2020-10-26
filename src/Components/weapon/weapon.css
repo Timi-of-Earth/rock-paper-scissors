@@ -84,6 +84,20 @@ img{
     .small.rock-div {
         margin-right: 40px;
     }
+    .big {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    }
+    .big-plate {
+        height: 120px;
+        width: 120px;
+        border-radius: 70px;
+    }
+    .big-img {
+        width: 70px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 340px) {

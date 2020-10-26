@@ -28,7 +28,7 @@ export class Board2 extends React.Component {
     }
     render() {
         return (<div className='background' style={{display: this.props.display}}>
-                    <Header gameMode={this.props.gameMode}/>
+                    <Header gameMode={this.props.gameMode} score={this.props.score}/>
                     <Button onClick={this.rulesAction} />
                     
                     <div className='container'>

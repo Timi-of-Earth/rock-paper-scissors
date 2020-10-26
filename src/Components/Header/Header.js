@@ -20,7 +20,7 @@ export class Header extends React.Component {
                 </div>
                 <div className='score'>
                     <p>SCORE</p>
-                    <h1>12</h1>
+                    <h1>{this.props.score}</h1>
                 </div>
             </div>
         )

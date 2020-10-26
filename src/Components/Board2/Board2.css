@@ -8,11 +8,11 @@
 }
 
 .your-weapon {
-   margin-right: 10vh;
+   margin-right: 5vw;
    text-align: center; 
 }
 .house-weapon {
-    margin-left: 10vh;
+    margin-left: 5vw;
     text-align: center; 
 }
 
@@ -28,4 +28,19 @@
     height: 120px;
     border-radius: 60px;
     background-color: hsl(237, 40%, 18%);
+}
+
+@media only screen and (max-width: 420px) {
+    .your-weapon {
+        margin-right: 3vw;
+        text-align: center; 
+     }
+     .house-weapon {
+         margin-left: 3vw;
+         text-align: center; 
+     }
+
+     .placeholder {
+        margin-top: 30px;
+     }
 }

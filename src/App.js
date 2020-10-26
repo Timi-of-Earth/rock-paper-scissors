@@ -22,7 +22,8 @@ class App extends React.Component {
       board2: 'none',
       board3: 'none',
       board4: 'none',
-      verb: 'WIN'
+      verb: 'WIN',
+      score: 0
     }
     this.startGame = this.startGame.bind(this);
     this.newGame = this.newGame.bind(this);
@@ -79,6 +80,28 @@ class App extends React.Component {
         board4: 'block'
       })
     }, 1900);
+
+    
+
+    //change score
+    setTimeout(( )=> {
+      //Calculate new score
+    let currentScore = this.state.score;
+    let newScore;
+    if (this.state.verb === 'WIN') {
+      newScore = currentScore + 1
+    } else if (this.state.verb === 'LOSE') {
+      newScore = currentScore - 1
+    } else {
+      newScore = currentScore
+    }
+    console.log(newScore);
+    console.log(currentScore);
+      this.setState({
+        score: newScore
+      })
+    }, 1900);
+
   }
 
   newGame() {
@@ -90,10 +113,10 @@ class App extends React.Component {
 
   render() {
     return (<div>
-      <Board gameMode={this.state.gameMode} display={this.state.board1} onClick={this.startGame}/>
-      <Board2 gameMode={this.state.gameMode} display={this.state.board2} userChoice={this.state.userChoice}/>
-      <Board3 gameMode={this.state.gameMode} display={this.state.board3} houseChoice={this.state.houseChoice} userChoice={this.state.userChoice}/>
-      <Board4 gameMode={this.state.gameMode} onClick={this.newGame} display={this.state.board4} houseChoice={this.state.houseChoice} userChoice={this.state.userChoice} verb={this.state.verb}/>
+      <Board gameMode={this.state.gameMode} display={this.state.board1} onClick={this.startGame} score={this.state.score} />
+      <Board2 gameMode={this.state.gameMode} display={this.state.board2} userChoice={this.state.userChoice} score={this.state.score} />
+      <Board3 gameMode={this.state.gameMode} display={this.state.board3} houseChoice={this.state.houseChoice} userChoice={this.state.userChoice} score={this.state.score} />
+      <Board4 gameMode={this.state.gameMode} onClick={this.newGame} display={this.state.board4} houseChoice={this.state.houseChoice} userChoice={this.state.userChoice} verb={this.state.verb} score={this.state.score} />
       </div>
     );
   };
